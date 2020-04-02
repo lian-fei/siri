@@ -184,7 +184,7 @@ export default class iOS9Curve {
     return null;
   }
 
-  static getDefinition(waveColors) {
+  static getDefinition(siriColors) {
     return Object.assign(
       [
         {
@@ -204,7 +204,7 @@ export default class iOS9Curve {
           color: '48, 220, 155',
         },
       ],
-      waveColors,
+      siriColors,
     );
   }
 }

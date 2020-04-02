@@ -123,7 +123,7 @@ export default class SiriWave {
 
     // Instantiate all curves based on the style
     if (this.opt.style === 'ios9') {
-      for (const def of iOS9Curve.getDefinition(this.opt.waveColors || [])) {
+      for (const def of iOS9Curve.getDefinition(this.opt.siriColors || [])) {
         this.curves.push(
           new iOS9Curve({
             ctrl: this,

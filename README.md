@@ -19,7 +19,7 @@ var siribox = new Siri({
 	height: 200,
 	autostart: true,
 	style: 'ios9',
-	waveColors: [
+	siriColors: [
 		{
 			color: '255,255,255',
 			supportLine: true,
