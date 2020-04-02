@@ -56,7 +56,7 @@ var siribox = new Siri({
 | autostart  | Bool          | Decide wether start the animation on boot.                             | false      | no       |
 | pixelDepth | Number        | Number of step (in pixels) used when drawed on canvas.                 | 0.02       | no       |
 | lerpSpeed  | Number        | Lerp speed to interpolate properties.                                  | 0.01       | no       |
-| waveColors  | Array        | line color                                                             | 0.01       | no       |
+| siriColors  | Array        | line color                                                             | 0.01       | no       |
 
 ## API
 
