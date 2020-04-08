@@ -11,8 +11,8 @@ export default class Curve {
   globalAttFn(x) {
     return Math.pow(
       this.ATT_FACTOR / (this.ATT_FACTOR + Math.pow(x, this.ATT_FACTOR)),
-      this.ATT_FACTOR,
-    );
+      this.ATT_FACTOR
+    )
   }
 
   _xpos(i) {
@@ -77,7 +77,7 @@ export default class Curve {
         attenuation: 1,
         lineWidth: 1.5,
         opacity: 1,
-      },
+      }
     ];
   }
 }

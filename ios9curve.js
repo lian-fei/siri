@@ -59,7 +59,7 @@ export default class iOS9Curve {
   globalAttFn(x) {
     return Math.pow(
       this.ATT_FACTOR / (this.ATT_FACTOR + Math.pow(x, 2)),
-      this.ATT_FACTOR,
+      this.ATT_FACTOR
     );
   }
 
@@ -87,7 +87,7 @@ export default class iOS9Curve {
       y += Math.abs(
         this.amplitudes[ci]
           * this.sin(this.verses[ci] * x, this.phases[ci])
-          * this.globalAttFn(x),
+          * this.globalAttFn(x)
       );
     }
 
@@ -141,7 +141,7 @@ export default class iOS9Curve {
 
       this.amplitudes[ci] = Math.min(
         Math.max(this.amplitudes[ci], 0),
-        this.finalAmplitudes[ci],
+        this.finalAmplitudes[ci]
       );
       this.phases[ci] =        (this.phases[ci]
           + this.ctrl.speed * this.speeds[ci] * this.SPEED_FACTOR)
@@ -204,7 +204,7 @@ export default class iOS9Curve {
           color: '48, 220, 155',
         },
       ],
-      siriColors,
+      siriColors
     );
   }
 }

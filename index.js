@@ -42,7 +42,7 @@ export default class SiriWave {
         pixelDepth: 0.02,
         lerpSpeed: 0.1,
       },
-      opt,
+      opt
     );
 
     /**
@@ -128,7 +128,7 @@ export default class SiriWave {
           new iOS9Curve({
             ctrl: this,
             definition: def,
-          }),
+          })
         );
       }
     } else {
@@ -137,7 +137,7 @@ export default class SiriWave {
           new Curve({
             ctrl: this,
             definition: def,
-          }),
+          })
         );
       }
     }
@@ -164,7 +164,7 @@ export default class SiriWave {
     return result
       ? `${parseInt(result[1], 16).toString()},${parseInt(
         result[2],
-        16,
+        16
       ).toString()},${parseInt(result[3], 16).toString()}`
       : null;
   }
@@ -179,7 +179,7 @@ export default class SiriWave {
     this[propertyStr] = lerp(
       this[propertyStr],
       this.interpolation[propertyStr],
-      this.opt.lerpSpeed,
+      this.opt.lerpSpeed
     );
     if (this[propertyStr] - this.interpolation[propertyStr] === 0) {
       this.interpolation[propertyStr] = null;

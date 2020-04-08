@@ -1,6 +1,6 @@
 {
   "name": "@xes/siri",
-  "version": "0.0.6",
+  "version": "0.0.10",
   "description": "@xes/siri",
   "main": "index.js",
   "scripts": {
